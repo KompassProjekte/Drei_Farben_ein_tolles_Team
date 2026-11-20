@@ -1,50 +1,38 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#183c32">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f36">
 <meta name="description" content="Drei Lieder als persönliches Dankeschön an das Team der Strahlentherapie.">
 <title>Drei Farben – ein tolles Team!</title>
 <style>
-:root{--green:#183c32;--green2:#315b4e;--ink:#26342e;--muted:#65716b;--paper:#f5f1e6;--white:#fffefa;--gold:#b58b4b;--blue:#12b9d2;--red:#e83c42}
+:root{--forest:#173f36;--forest2:#28594b;--ink:#26362f;--muted:#69766f;--paper:#f4f0e5;--card:#fffdf8;--gold:#bd9658;--line:#e4dac7;--blue:#13a9d4;--green:#278b55;--red:#df4147}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 Georgia,'Times New Roman',serif}
-.hero{position:relative;min-height:360px;display:grid;place-items:center;text-align:center;color:white;padding:72px 22px;background:linear-gradient(110deg,rgba(13,39,34,.86),rgba(24,60,50,.75)),url('bilder/eingang.jpg') center 48%/cover}
-.hero-inner{max-width:850px}.eyebrow{font:700 11px/1.4 Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#e7d4ad}
-h1{font-size:clamp(36px,6vw,64px);font-weight:500;line-height:1.05;margin:16px 0 12px}.subtitle{font-size:clamp(16px,2.4vw,21px);margin:0;color:#f4f0e6}
-.colorline{height:5px;max-width:340px;margin:25px auto 0;background:linear-gradient(90deg,#159ed8 0 33.3%,#238b53 33.3% 66.6%,#e43c43 66.6%);border-radius:9px}
-main{max-width:900px;margin:auto;padding:44px 22px 64px}.intro{text-align:center;max-width:740px;margin:0 auto 38px}.intro p{margin:0 0 13px}.intro strong{color:var(--green)}
-.team{margin:0 auto 42px;max-width:900px}
-.team h2{text-align:center;color:var(--green);margin:0 0 8px}
-.team-intro{text-align:center;color:var(--muted);font-size:15px;margin:0 0 18px}
-.team-photo{margin:0 0 16px;background:var(--white);border:1px solid #e3dccb;border-radius:10px;padding:7px;box-shadow:0 5px 16px rgba(31,53,44,.05)}
-.team-photo img{display:block;width:100%;height:auto;border-radius:5px}
-.team-photo figcaption{text-align:center;font:12px Arial,sans-serif;color:var(--muted);padding:6px 2px 2px}
-/* Reservierter Platz für das noch fehlende Einzelporträt; wird erst nach Erhalt des Fotos sichtbar eingefügt. */
-.team-photo-slot{display:none}
-.tracks{display:grid;gap:20px}.track{background:var(--white);border:1px solid #e3dccb;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(31,53,44,.06)}
-.track-image{height:180px;overflow:hidden;background:#ddd}.track-image img{width:100%;height:100%;object-fit:cover;display:block}.track-content{padding:22px 25px 24px}.track-head{display:flex;gap:15px;align-items:center}.num{flex:0 0 42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#f0ecdf;color:var(--green);font:700 14px Arial,sans-serif}h2{font-size:clamp(21px,3vw,27px);line-height:1.2;font-weight:500;margin:0}.style{font:12px Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:5px}audio{display:block;width:100%;margin-top:17px;accent-color:var(--green)}
-.closing{margin:46px auto 0;max-width:760px;text-align:center;padding:30px 24px;border:1px solid var(--gold);background:rgba(255,254,250,.72);border-radius:14px}.closing h2{color:var(--green);margin-bottom:10px}.closing p{margin:0}.signature{font-size:27px;font-style:italic;color:var(--green);margin-top:12px!important}
-footer{text-align:center;padding:25px 18px 34px;color:#73786f;font:12px Arial,sans-serif;border-top:1px solid #e2dbc9}
-@media(min-width:700px){.track{display:grid;grid-template-columns:260px 1fr;min-height:210px}.track-image{height:100%;min-height:210px}.track-content{align-self:center;padding:26px 30px}}
-@media(max-width:480px){.hero{min-height:310px;padding:55px 18px}.track-image{height:155px}.track-content{padding:18px}.closing{padding:24px 18px}}
-</style></head>
+.hero{position:relative;min-height:clamp(270px,34vw,390px);display:grid;place-items:center;text-align:center;color:#fff;padding:64px 22px;background:linear-gradient(110deg,rgba(13,42,35,.70),rgba(23,63,54,.56)),url('bilder/eingang.jpg') center 46%/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:5px;background:linear-gradient(90deg,var(--blue) 0 33.33%,var(--green) 33.33% 66.66%,var(--red) 66.66%)}
+.hero-inner{position:relative;z-index:1;max-width:900px}.eyebrow{font:700 11px/1.4 Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f0d9ae}h1{font-size:clamp(38px,6vw,66px);font-weight:500;line-height:1.04;margin:15px 0 13px}.subtitle{font-size:clamp(16px,2vw,21px);margin:0;color:#f6f0e5}.colorline{height:4px;max-width:290px;margin:24px auto 0;background:linear-gradient(90deg,var(--blue) 0 33.3%,var(--green) 33.3% 66.6%,var(--red) 66.6%);border-radius:8px}
+main{max-width:1060px;margin:auto;padding:48px 26px 66px}.intro{text-align:center;max-width:800px;margin:0 auto 48px;padding:27px 34px;background:rgba(255,253,248,.78);border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 24px rgba(35,55,45,.045)}.intro p{margin:0 0 13px}.intro p:last-child{margin-bottom:0}.intro strong{color:var(--forest)}
+.section-kicker{text-align:center;font:700 11px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}.team{margin:0 auto 40px;max-width:1000px}.team h2,.tracks-heading h2{font-size:clamp(25px,3vw,34px);font-weight:500;line-height:1.2;text-align:center;color:var(--forest);margin:0}.team-intro{text-align:center;color:var(--muted);margin:8px 0 24px}.team-gallery{display:grid;gap:20px}.team-photo{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 7px 22px rgba(31,53,44,.07)}.team-photo img{display:block;width:100%;height:auto;border-radius:8px}.team-photo figcaption{text-align:center;font:12px Arial,sans-serif;letter-spacing:.04em;color:var(--muted);padding:8px 2px 1px}.team-motto{margin:32px auto 38px;text-align:center;color:var(--forest);font-size:clamp(23px,3vw,31px);font-style:italic;line-height:1.25}.team-motto:before,.team-motto:after{content:"";display:block;width:min(150px,30%);height:2px;background:linear-gradient(90deg,var(--blue),var(--green),var(--red));margin:0 auto 15px}.team-motto:after{margin:15px auto 0}
+.tracks-heading{text-align:center;margin:0 auto 22px}.tracks-heading p{margin:8px 0 0;color:var(--muted)}.tracks{display:grid;gap:18px}.track{display:grid;grid-template-columns:minmax(210px,30%) 1fr;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 7px 22px rgba(31,53,44,.06);transition:transform .2s,box-shadow .2s}.track:hover{transform:translateY(-2px);box-shadow:0 11px 28px rgba(31,53,44,.10)}.track-image{min-height:190px;background:#ddd}.track-image img{width:100%;height:100%;object-fit:cover;display:block}.track-content{padding:24px 30px;align-self:center}.track-head{display:flex;gap:15px;align-items:center}.num{flex:0 0 42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#f1ecdf;color:var(--forest);font:700 13px Arial,sans-serif;border:1px solid #e5dbc8}h3{font-size:clamp(21px,2.6vw,27px);line-height:1.2;font-weight:500;margin:0;color:var(--forest)}.style{font:12px Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:6px}audio{display:block;width:100%;margin-top:18px;accent-color:var(--forest)}
+.closing{margin:48px auto 0;max-width:820px;text-align:center;padding:34px 30px;border:1px solid var(--gold);background:rgba(255,253,248,.88);border-radius:16px;box-shadow:0 7px 22px rgba(31,53,44,.045)}.closing h2{font-size:25px;font-weight:500;color:var(--forest);margin:0 0 12px}.closing p{margin:0}.signature{font-size:27px;font-style:italic;color:var(--forest);margin-top:15px!important}footer{text-align:center;padding:25px 18px 34px;color:#73786f;font:12px Arial,sans-serif;border-top:1px solid var(--line)}
+@media(max-width:650px){body{font-size:16px}.hero{min-height:280px;padding:48px 18px}main{padding:30px 15px 46px}.intro{padding:22px 18px;margin-bottom:36px}.team-photo{padding:8px}.team-gallery{gap:14px}.team-motto{margin:26px auto 30px}.track{grid-template-columns:1fr}.track-image{height:190px;min-height:0}.track-content{padding:19px 18px 22px}.closing{padding:26px 18px;margin-top:34px}}
+@media(min-width:1000px){.team-gallery{gap:22px}.team-photo{padding:15px}.team-photo figcaption{font-size:13px}}
+</style>
+</head>
 <body>
 <header class="hero"><div class="hero-inner"><div class="eyebrow">Ein musikalisches Dankeschön</div><h1>Drei Farben –<br>ein tolles Team!</h1><p class="subtitle">Drei Lieder. Sechs Wochen. Eine bleibende Erinnerung.</p><div class="colorline"></div></div></header>
 <main>
 <section class="intro"><p>Manches lässt sich nicht mit einem einfachen „Danke“ sagen.</p><p>Sechs Wochen lang durfte ich Ihre Arbeit, Ihre Aufmerksamkeit und Ihre Menschlichkeit erleben. Ich habe gesehen, wie viel Wissen, Erfahrung und Sorgfalt hinter jeder Behandlung stehen – und wie viel ein freundliches Wort, ein Lächeln oder eine kleine Portion Humor bewirken können.</p><p><strong>Darum sind diese drei Lieder entstanden – für euch, mit Musik und von Herzen.</strong></p></section>
-<section class="team" aria-labelledby="team-heading">
-<h2 id="team-heading">Die Menschen hinter den sechs Wochen</h2>
-<p class="team-intro">Ein herzliches Dankeschön an das gesamte Team.</p>
-<figure class="team-photo"><img src="bilder/team-oberer-abschnitt.jpg" alt="Teamfoto, oberer Abschnitt der Teamübersicht"><figcaption>Das Team der Strahlentherapie</figcaption></figure>
-<!-- Hier kann später das noch fehlende Einzelporträt zwischen den beiden Teamabschnitten eingefügt werden. -->
-<div class="team-photo-slot" aria-hidden="true"></div>
-<figure class="team-photo"><img src="bilder/team-unterer-abschnitt.jpg" alt="Teamfoto, unterer Abschnitt der Teamübersicht"><figcaption>Das Team der Strahlentherapie</figcaption></figure>
-</section>
-<section class="tracks" aria-label="Die drei Lieder">
-<article class="track"><div class="track-image"><img src="bilder/blau.jpg" alt="Bestrahlungsgerät in blauem Licht"></div><div class="track-content"><div class="track-head"><div class="num">01</div><div><h2>BLAU, GRÜN und ROT</h2><div class="style">Blues Rock · mit einem Augenzwinkern</div></div></div><audio controls preload="none"><source src="musik/01-blau-gruen-und-rot.mp3" type="audio/mpeg">Dein Browser unterstützt die Audiowiedergabe nicht.</audio></div></article>
-<article class="track"><div class="track-image"><img src="bilder/gruen.jpg" alt="Bestrahlungsgerät in grünem Licht"></div><div class="track-content"><div class="track-head"><div class="num">02</div><div><h2>Sechs Wochen und immer ein Lächeln</h2><div class="style">Soul Blues · warm und lebensfroh</div></div></div><audio controls preload="none"><source src="musik/02-sechs-wochen-und-immer-ein-laecheln.mp3" type="audio/mpeg">Dein Browser unterstützt die Audiowiedergabe nicht.</audio></div></article>
-<article class="track"><div class="track-image"><img src="bilder/rot.jpg" alt="Bestrahlungsgerät in rotem Licht"></div><div class="track-content"><div class="track-head"><div class="num">03</div><div><h2>Die Menschen hinter dem Licht</h2><div class="style">Blues Soul · ein Dankeschön von Herzen</div></div></div><audio controls preload="none"><source src="musik/03-die-menschen-hinter-dem-licht.mp3" type="audio/mpeg">Dein Browser unterstützt die Audiowiedergabe nicht.</audio></div></article>
-</section>
+<section class="team" aria-labelledby="team-heading"><p class="section-kicker">Die Menschen im Mittelpunkt</p><h2 id="team-heading">Die Menschen hinter den sechs Wochen</h2><p class="team-intro">Ein herzliches Dankeschön an das gesamte Team.</p>
+<div class="team-gallery"><figure class="team-photo"><img src="bilder/team-oberer-abschnitt.jpg" alt="Teamfoto, oberer Abschnitt der Teamübersicht"><figcaption>Das Team der Strahlentherapie</figcaption></figure><figure class="team-photo"><img src="bilder/team-unterer-abschnitt.jpg" alt="Teamfoto, unterer Abschnitt der Teamübersicht"><figcaption>Das Team der Strahlentherapie</figcaption></figure></div>
+<p class="team-motto">Die Menschen zuerst, dann die Musik.</p></section>
+<section aria-labelledby="tracks-title"><div class="tracks-heading"><p class="section-kicker">Drei Farben · Drei Lieder</p><h2 id="tracks-title">Ein musikalisches Dankeschön</h2><p>Für euch – mit Musik und von Herzen.</p></div>
+<div class="tracks">
+<article class="track"><div class="track-image"><img src="bilder/blau.jpg" alt="Bestrahlungsgerät in blauem Licht"></div><div class="track-content"><div class="track-head"><div class="num">01</div><div><h3>BLAU, GRÜN und ROT</h3><div class="style">Blues Rock · mit einem Augenzwinkern</div></div></div><audio controls preload="none"><source src="musik/01-blau-gruen-und-rot.mp3" type="audio/mpeg">Dein Browser unterstützt die Audiowiedergabe nicht.</audio></div></article>
+<article class="track"><div class="track-image"><img src="bilder/gruen.jpg" alt="Bestrahlungsgerät in grünem Licht"></div><div class="track-content"><div class="track-head"><div class="num">02</div><div><h3>Sechs Wochen und immer ein Lächeln</h3><div class="style">Soul Blues · warm und lebensfroh</div></div></div><audio controls preload="none"><source src="musik/02-sechs-wochen-und-immer-ein-laecheln.mp3" type="audio/mpeg">Dein Browser unterstützt die Audiowiedergabe nicht.</audio></div></article>
+<article class="track"><div class="track-image"><img src="bilder/rot.jpg" alt="Bestrahlungsgerät in rotem Licht"></div><div class="track-content"><div class="track-head"><div class="num">03</div><div><h3>Die Menschen hinter dem Licht</h3><div class="style">Blues Soul · ein Dankeschön von Herzen</div></div></div><audio controls preload="none"><source src="musik/03-die-menschen-hinter-dem-licht.mp3" type="audio/mpeg">Dein Browser unterstützt die Audiowiedergabe nicht.</audio></div></article>
+</div></section>
 <section class="closing"><h2>Für das gesamte Team der Strahlentherapie</h2><p>Für Ihre fachliche Kompetenz, Ihre Geduld und die herzliche Begleitung auf meinem Weg möchte ich Ihnen von Herzen danken. Sie haben mir diese Zeit leichter gemacht und mir Zuversicht gegeben.</p><p class="signature">Mit herzlichen Grüßen und großer Dankbarkeit<br>Lothar</p></section>
 </main><footer>Ein persönliches musikalisches Dankeschön · Drei Farben – ein tolles Team</footer>
 </body></html>

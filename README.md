@@ -1,26 +1,13 @@
-# Drei Farben – ein tolles Team!
+# Drei Farben – ein tolles Team! · Version 2.0
 
-Eine statische, mobilfreundliche Musikseite für GitHub Pages.
+Eine statische, mobilfreundliche Musikseite als persönliches Dankeschön an das Team der Strahlentherapie.
 
 ## Inhalt
-- `index.html` – Startseite mit drei direkt abspielbaren Liedern
-- `musik/` – die drei MP3-Dateien
-- `bilder/` – drei Gerätefotos, das Originalfoto des Eingangs und beide Teamfoto-Abschnitte
+- `index.html` – Startseite mit Einleitung, beiden Teamfoto-Abschnitten und drei direkt abspielbaren Liedern
+- `bilder/` – Geräte-, Eingangs- und Teamfotos
+- `musik/` – die drei MP3-Aufnahmen
 
 ## Veröffentlichung mit GitHub Pages
-1. Ein neues Repository auf GitHub anlegen, z. B. `drei-farben-dankeschoen`.
-2. Alle Dateien und Ordner aus diesem Paket in das Repository hochladen (nicht den ZIP-Ordner selbst, sondern dessen Inhalt).
-3. Unter **Settings → Pages** bei **Build and deployment** `Deploy from a branch` wählen.
-4. Als Branch `main` und Ordner `/ (root)` auswählen und speichern.
-5. Nach der Veröffentlichung zeigt GitHub Pages die Internetadresse an.
+Das gesamte Repository-Inhaltsverzeichnis hochladen bzw. die vorhandenen Dateien ersetzen. Unter **Settings → Pages** die Quelle `main` und den Ordner `/ (root)` verwenden.
 
-Die endgültige Internetadresse kann danach in den QR-Code der Dankesurkunde eingetragen werden.
-
-## Hinweise
-- Die Seite enthält keine Tracker, Formulare oder externen Skripte.
-- Die MP3-Dateien werden erst geladen, wenn jemand auf Wiedergabe drückt (`preload="none"`).
-- Das Teamfoto ist noch nicht eingebunden; es kann nach Auswahl und Freigabe ergänzt werden.
-
-
-## Teamfotos
-Die beiden hochgeladenen Teamfoto-Abschnitte sind eingebunden. Zwischen ihnen ist im HTML eine markierte Stelle für das noch fehlende Einzelporträt vorgesehen. Sobald das Foto vorliegt, kann es dort ergänzt werden. Vor einer Veröffentlichung im Internet sollte geklärt sein, dass die abgebildeten Personen mit der Veröffentlichung auf einer öffentlichen Website einverstanden sind.
+Die Seite benötigt keine externen Skripte, Tracker oder Formulare. Die MP3-Dateien werden erst beim Starten der Wiedergabe geladen (`preload="none"`).
